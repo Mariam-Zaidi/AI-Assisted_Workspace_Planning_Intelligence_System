@@ -6,6 +6,10 @@ A BIM-integrated decision support system that evaluates office workspace layouts
 
 This project combines **Architecture + BIM + Data Science** by transforming subjective workspace planning decisions into measurable spatial performance indicators.
 
+<img width="912" height="561" alt="image" src="https://github.com/user-attachments/assets/2cba4562-6e95-4743-a11a-21fd12926b14" />
+
+<img width="987" height="395" alt="image" src="https://github.com/user-attachments/assets/e252ae96-579d-4724-b9b0-696b25975215" />
+
 ---
 
 ## Objectives
@@ -66,6 +70,7 @@ The weighted rule scores are combined into a single **Efficiency Score (0–100)
 ### 4. Machine Learning
 
 A **Linear Regression** model was trained using the architectural evaluation scores to predict workspace efficiency for different layout configurations.
+<img width="797" height="607" alt="image" src="https://github.com/user-attachments/assets/a3d78195-c95d-40c6-8d78-d72c99677e3a" />
 
 ---
 
