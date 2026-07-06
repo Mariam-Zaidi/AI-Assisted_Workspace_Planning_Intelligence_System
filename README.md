@@ -17,6 +17,70 @@ This project combines **Architecture + BIM + Data Science** by transforming subj
 - Generate automated design recommendations
 
 ---
+## Methodology
+
+### 1. BIM Data Extraction
+
+The office workspace was modeled in **Autodesk Revit**, and key spatial metrics were extracted using room and furniture schedules.
+
+**Extracted Metrics**
+- Room Areas
+- Occupancy
+- Area per Person
+- Circulation Percentage
+- Functional Space Categories
+- Workspace Adjacency
+
+---
+
+### 2. Rule-Based Workspace Evaluation
+
+Seven architectural planning heuristics were developed to evaluate each layout.
+
+| Rule | Weight |
+|------|-------:|
+| Meeting Adjacency | 20 |
+| CEO ↔ Conference Accessibility | 15 |
+| Cabin Proximity | 15 |
+| Circulation Efficiency | 20 |
+| Crossing Flow | 10 |
+| Density | 10 |
+| Pantry Zoning | 10 |
+
+Each layout is scored using these weighted rules to generate an overall workspace efficiency rating.
+
+---
+
+### 3. Spatial Efficiency Scoring
+
+The weighted rule scores are combined into a single **Efficiency Score (0–100)**, allowing objective comparison between multiple workspace layouts.
+
+| Layout | Efficiency Score |
+|--------|-----------------:|
+| Layout A | 61.5 |
+| Layout B | 73.0 |
+| Layout C | 69.5 |
+
+---
+
+### 4. Machine Learning
+
+A **Linear Regression** model was trained using the architectural evaluation scores to predict workspace efficiency for different layout configurations.
+
+---
+
+### 5. Automated Design Recommendations
+
+Based on the evaluated layouts, the system generates recommendations such as:
+
+- Improve meeting room accessibility
+- Reduce excessive circulation area
+- Relocate pantry away from focused workspaces
+- Increase area per person to improve comfort
+- Improve spatial relationships between key functional spaces
+
+
+---
 
 ## Workflow
 
